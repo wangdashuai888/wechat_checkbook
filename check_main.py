@@ -48,7 +48,7 @@ def text_reply(msg):#-[金额][备注][包括/删除][人员]
 		print('识别模式',trigger)
 		return_message = check_calculate.calculate(message,trigger,item_price)
 		msg.user.send(return_message)
-
+		print('回复完成')
 itchat.auto_login()
 itchat.run()
 itchat.send('开始工作',toUserName='filehelper')
