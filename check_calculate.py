@@ -24,5 +24,8 @@ def calculate(message,trigger,item_price):#识别并计算
 		#if(is_comment == 1):
 			#return_message = "识别记账输入，记账金额" + str(item_price) + "备注：" + comment + "记账人数" + str(people_counter) + "人均价格" + str(unit_price)
 		return_message = "识别记账输入，记账金额" + str(item_price) + "记账人数" + str(people_counter) + "人均价格" + str(unit_price)
-	elif(trigger == 2):
+	else:
+		return_message = "未完成模式，请联系作者"
+	#elif(trigger == 2):
+
 	return return_message
